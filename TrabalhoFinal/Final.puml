@@ -1,0 +1,35 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class java.io.FileInputStream
+class java.io.FileOutputStream
+class java.io.IOException
+class java.io.ObjectInputStream
+class java.io.ObjectOutputStream
+class java.util.ArrayList
+class java.util.Date
+class javax.swing.JFrame
+class javax.swing.JMenuItem
+class javax.swing.table.DefaultTableModel
+class trabalhofinal.Aplicativo
+class trabalhofinal.Arquivo
+class trabalhofinal.Cliente
+class trabalhofinal.Pedido
+class trabalhofinal.Produto
+interface java.io.Serializable
+trabalhofinal.Aplicativo ..> java.lang.SuppressWarnings
+trabalhofinal.Aplicativo ..> java.util.ArrayList
+trabalhofinal.Aplicativo --|> javax.swing.JFrame
+trabalhofinal.Aplicativo ..> javax.swing.JMenuItem
+trabalhofinal.Aplicativo ..> javax.swing.table.DefaultTableModel
+trabalhofinal.Arquivo ..> java.io.FileInputStream
+trabalhofinal.Arquivo ..> java.io.FileOutputStream
+trabalhofinal.Arquivo ..> java.io.IOException
+trabalhofinal.Arquivo ..> java.io.ObjectInputStream
+trabalhofinal.Arquivo ..> java.io.ObjectOutputStream
+trabalhofinal.Arquivo ..> java.util.ArrayList
+trabalhofinal.Cliente --|> java.io.Serializable
+trabalhofinal.Pedido ..> java.util.ArrayList
+trabalhofinal.Pedido ..> java.util.Date
+trabalhofinal.Pedido --|> java.io.Serializable
+trabalhofinal.Produto --|> java.io.Serializable
+@enduml
